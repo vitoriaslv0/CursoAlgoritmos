@@ -1,0 +1,19 @@
+Algoritmo "NúmeroMútiplo"
+
+Var
+
+   x, y: inteiro
+
+Inicio
+
+      escreval("Digite dois número inteiros: ")
+      leia(x)
+      leia(y)
+
+      se (x % Y = 0) ou (y % x = 0) entao
+         escreva("São múltiplos.")
+      senao
+         escreva("Não são múltiplos.")
+      fimse
+
+fimAlgoritmo

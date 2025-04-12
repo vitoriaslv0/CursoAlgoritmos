@@ -1,0 +1,57 @@
+Algoritmo "experiencias"
+
+Var
+
+   N, i, qt, totalCob, totalS, totalC, totalR: inteiro
+   pratos, psapos, pcoelhos : real
+   tipoCob: caractere
+
+Inicio
+
+   totalR <- 0
+   totalC <- 0
+   totalS <- 0
+
+   escreval("Animais disponíveis no laboratório:")
+   escreval("RATOS - COELHOS - SAPOS")
+   escreval("___________________________________________")
+   escreva("Quantos casos de teste serao digitados? ")
+   leia(N)
+
+   limpaTela
+
+   para i de 1 ate N faca
+      escreval
+      escreva("Quantidade de cobaias: ")
+      leia(qt)
+      escreva("Tipo de cobaia: ")
+      leia(tipoCob)
+
+      se tipoCob = "R" entao
+         totalR <- totalR + qt
+      senao
+         se tipoCob = "S" entao
+            totalS <- totalS + qt
+         senao
+             totalC <- totalC + qt
+         fimse
+      fimse
+   fimpara
+
+   totalCob <- totalR + totalS + totalC
+
+   pcoelhos <- totalC / totalCob * 100
+   pratos <- totalR / totalCob * 100
+   psapos <- totalS / totalCob * 100
+
+   escreval
+   escreval("RELATORIO FINAL:")
+   escreval("Total: ", totalCob, " cobaias")
+   escreval("Total de coelhos: ", totalC)
+   escreval("Total de ratos:", totalR)
+   escreval("Total de sapos:", totalS)
+   escreval("Percentual de coelhos:", pcoelhos:4:2)
+   escreval("Percentual de ratos:", pratos:4:2)
+   escreval("Percentual de sapos:", psapos:4:2)
+
+Fimalgoritmo

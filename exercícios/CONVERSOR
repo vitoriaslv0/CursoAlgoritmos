@@ -1,0 +1,25 @@
+Algoritmo "conversor_Moedas"
+
+// conversor de reais para dolar com o comando ENQUANTO
+Var
+
+   contador, qnt: Inteiro
+   valor, dolar: Real
+
+inicio
+
+      contador <- 1
+      escreva ("Quantas vezes você quer converter? ")
+      leia(qnt)
+
+      enquanto (contador <= qnt) faca
+         escreva ("Qual o valor em R$? ")
+         leia (valor)
+         escreval
+         dolar <- valor / 5.84
+         escreva ("Valor convertido em dólar: US$", dolar:5:2)
+         escreval
+         contador <- contador + 1
+      fimEnquanto
+
+fimAlgoritmo

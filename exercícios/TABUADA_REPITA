@@ -1,0 +1,23 @@
+Algoritmo "Tabuada"
+
+// Tabuada com o uso do comando repita
+
+Var
+
+   cont, N, R: inteiro
+
+Inicio
+
+      cont <- 1
+
+      escreva("Qual número você quer a tabuada? ")
+      leia(N)
+      escreval
+
+      repita
+            R <- N * cont
+            Escreval (N, " x", cont, " =", R)
+            cont <- cont +1
+      ate (cont > 10)
+
+fimAlgoritmo

@@ -1,0 +1,35 @@
+// Base de comandos para Script contador
+
+//Algoritmo "Contador"
+//Var
+//   contador: inteiro
+//Inicio
+//      contador <- 0
+//      Enquanto (contador <= 5) faca
+//         Escreval(contador)
+//         contador <- contador +1
+//      Fimenquanto
+//      Escreval ("Contador finalizado")
+//FimAlgoritmo
+
+Algoritmo "contagem_regressiva"
+
+Var
+
+   contador: inteiro
+   
+Inicio
+
+      escreva("Qual número deseja começar a contagem regressiva? ")
+      leia(contador)
+      escreval
+
+      enquanto (contador >= 0) faca
+         escreva (contador, "  ")
+         contador <- contador -1
+      fimEnquanto
+
+      escreval
+      escreva ("Contador Finalizado!")
+      
+fimAlgoritmo

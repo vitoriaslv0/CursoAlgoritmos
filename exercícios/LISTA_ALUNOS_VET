@@ -1,0 +1,42 @@
+Algoritmo "ListagemAlunos"
+
+// uso dos vetores para armazenar dados da turma
+
+Var
+
+  nome: vetor[1..5] de Caractere
+  nota1: vetor[1..5] de Real
+  nota2: vetor[1..5] de Real
+  m: vetor[1..5] de Real
+  SM, MT: Real  //soma das médias&média das turmas
+  i: Inteiro
+  
+Inicio
+
+   Para i <- 1 ate 5 faca
+      Escreval
+      Escreval("DADOS DO ALUNO ", i)
+      Escreva("Nome: ")
+      Leia(nome[i])
+      Escreva("Nota 1: ")
+      Leia(nota1[i])
+      Escreva("Nota 2: ")
+      Leia(nota2[i])
+      Escreva("Media: ")
+      m[i] <- (nota1[i] + nota2[i])/2
+      Escreval(m[i]:4:1)
+      SM <- SM + m[i]
+   FimPara
+
+   LimpaTela
+
+   MT <- SM / 5
+   Escreval ("Média geral da turma: ", MT:4:1)
+   Escreval("Alunos que ficaram acima da media:")
+   Para i <- 1 ate 5 faca
+      Se (m[i] > MT) entao
+         Escreval(nome[i]:10, m[i]:4:1)
+      FimSe
+   FimPara
+   
+fimAlgoritmo

@@ -1,0 +1,25 @@
+Algoritmo "comando_para"
+//Para variavel <- inicio ate fim [passo solto] faca
+       //bloco                      opcional
+//Fimpara
+
+Var
+
+   cont, v: inteiro
+   
+//identificar números pares:
+
+Inicio
+
+      escreva("Digite um Valor: ")
+      leia(v)
+
+      Se (V % 2 = 1) entao
+         v <- v - 1
+      fimSe
+
+      Para cont <- v ate 0 passo -2 faca
+           escreval(cont)
+      fimPara
+
+Fimalgoritmo

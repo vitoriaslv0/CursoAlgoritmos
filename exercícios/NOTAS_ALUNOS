@@ -1,0 +1,31 @@
+Algoritmo "NOTAS"
+
+// teste simples, funcionamento de notas escolares
+
+Var
+
+  N1, N2, M: Real
+  
+Inicio
+
+      Escreva ("Primeira Nota: ")
+      Leia(N1)
+      Escreva ("Segunda Nota: ")
+      Leia (N2)
+
+      M <- (N1 + N2)/2
+
+      Escreval
+      Escreval("A média do aluno foi:", M:4:2)
+
+      Se (M >= 7) entao
+         Escreval ("Aluno Aprovado")
+      senao
+           Se (M >= 5) e (M <7) entao
+              Escreval("Aluno em Recuperação")
+           senao
+                Escreva("Aluno Reprovado")
+           fimse
+      fimse
+      
+fimAlgoritmo

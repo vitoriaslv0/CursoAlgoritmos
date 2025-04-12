@@ -1,0 +1,22 @@
+Algoritmo "contagem_progressiva"
+
+Var
+
+   valor, contador: inteiro
+
+Inicio
+
+      contador <- 0
+      escreva ("Quer contar até quanto? ")
+      leia (valor)
+      escreval
+
+      enquanto (contador <= valor ) faca
+         escreva (contador, "  ")
+         contador <- contador +1
+      fimEnquanto
+
+      escreval
+      escreva ("Contador Finalizado!")
+
+fimAlgoritmo

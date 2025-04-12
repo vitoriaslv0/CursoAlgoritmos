@@ -1,0 +1,21 @@
+Algoritmo "Carteira_Motorista"
+
+Var
+
+   a1, a2: inteiro
+   
+Inicio
+
+      Escreva ("Ano Atual (yyyy): ")
+      Leia(A1)
+      Escreva ("Ano de Nascimento (yyyy): ")
+      Leia (A2)
+      Escreval ("IDADE:",A1-A2)
+
+      Se ((A1 - A2) >= 18) entao
+         Escreva ("APTO A TIRAR A CARTEIRA")
+      Senao
+         Escreva ("INAPTO A TIRAR A CARTEIRA")
+      Fimse
+
+Fimalgoritmo
